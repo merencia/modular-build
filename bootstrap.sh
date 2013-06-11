@@ -7,13 +7,14 @@ function becho {
 
 becho "=============================="
 becho " modular-build installer \n"
-becho " > by caarlos0"
-becho " https://github.com/caarlos0/modular-build "
+becho " > by lucasmerencia based on caarlos0's modular-buil"
+becho " https://github.com/lucasmerencia/modular-build "
+becho " original project: https://github.com/caarlos0/modular-build "
 becho "==============================\n\n"
 
 # clone repo
 becho "Downloading scripts..."
-git clone https://github.com/caarlos0/modular-build.git scripts
+git clone https://github.com/lucasmerencia/modular-build.git scripts
 
 # link Makefile
 becho "Linking Makefile..."
