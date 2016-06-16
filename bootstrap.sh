@@ -13,11 +13,16 @@ becho " original project: https://github.com/caarlos0/modular-build "
 becho "==============================\n\n"
 
 echo -n "script folder (scripts): "
-read SCRIPTS_FOLDER
+read -r -e SCRIPTS_FOLDER
+
+if [ -z "$SCRIPTS_FOLDER" ]; then
+  SCRIPTS_FOLDER=scripts
+fi
 
 # clone repo
 becho "Downloading scripts..."
 git clone https://github.com/merencia/modular-build.git $SCRIPTS_FOLDER
+
 
 # link Makefile
 becho "Linking Makefile..."
