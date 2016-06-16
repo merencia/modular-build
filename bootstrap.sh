@@ -15,7 +15,7 @@ becho "==============================\n\n"
 echo -n "script folder (scripts): "
 read SCRIPTS_FOLDER
 
-clone repo
+# clone repo
 becho "Downloading scripts..."
 git clone https://github.com/merencia/modular-build.git $SCRIPTS_FOLDER
 
